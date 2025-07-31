@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>How It Works | National Rental</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo1.jpg" alt="National Rent-To-Own" class="brand-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" data-bs-toggle="dropdown">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Furniture</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="living-room.html">Living Room</a></li>
+                  <li><a class="dropdown-item" href="bedroom.html">Bedroom</a></li>
+                  <li><a class="dropdown-item" href="dining-room.html">Dining Room</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="electronics.html">Electronics</a></li>
+              <li><a class="dropdown-item" href="appliances.html">Appliances</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary text-white ms-2" href="apply-now.html">Apply Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h1 class="text-center mb-4">How It Works</h1>
+    <div class="row gx-4 gy-4">
+      <div class="col-md-4 text-center">
+        <h3>Browse</h3>
+        <p>Choose from our wide selection of furniture, appliances, and electronics.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <h3>Apply</h3>
+        <p>Quick online application and flexible approval options.</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <h3>Enjoy</h3>
+        <p>Fast delivery and expert setup—get started in minutes.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center p-4 bg-dark text-white">
+    &copy; 2025 National Rental – For Educational Use Only
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll('.dropdown-submenu').forEach(submenu => {
+      submenu.addEventListener('mouseenter', () => {
+        submenu.querySelector('.dropdown-menu')?.classList.add('show');
+      });
+      submenu.addEventListener('mouseleave', () => {
+        submenu.querySelector('.dropdown-menu')?.classList.remove('show');
+      });
+    });
+  </script>
+</body>
+</html>

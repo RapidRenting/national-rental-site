@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Contact Us | National Rental</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo1.jpg" alt="National Rent-To-Own" class="brand-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" data-bs-toggle="dropdown">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Furniture</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="living-room.html">Living Room</a></li>
+                  <li><a class="dropdown-item" href="bedroom.html">Bedroom</a></li>
+                  <li><a class="dropdown-item" href="dining-room.html">Dining Room</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="electronics.html">Electronics</a></li>
+              <li><a class="dropdown-item" href="appliances.html">Appliances</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary text-white ms-2" href="apply-now.html">Apply Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h1 class="mb-4 text-center">Contact Us</h1>
+    <form action="https://formspree.io/f/xovllrwn" method="POST" class="mx-auto" style="max-width:600px;">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" name="name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" name="email" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Phone</label>
+        <input type="tel" name="phone" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Location</label>
+        <select name="location" class="form-select" required>
+          <option>Kingston</option>
+          <option>Ottawa</option>
+          <option>Brockville</option>
+          <option>Smiths Falls</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Message</label>
+        <textarea name="message" class="form-control" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+    <div class="mt-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h5>Ottawa Store</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d724852.3257053586!2d-76.79054963059005!3d44.79192742817061!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce08a9711d249f%3A0x3e8c73dc5cc523b6!2sNational%20Rent-To-Own!5e0!3m2!1sen!2sca!4v1753998044169!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      <div class="col-md-6">
+        <h5>Brockville Store</h5>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d724852.3257053586!2d-76.79054963059005!3d44.79192742817061!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccd0f73ce7a554f%3A0x58a62f8ac9509a0f!2sNational%20Rent-to-Own!5e0!3m2!1sen!2sca!4v1753998090400!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-md-6">
+        <h5>Smiths Falls Store</h5>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d724852.3257053586!2d-76.79054963059005!3d44.79192742817061!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccd88ae6abe4583%3A0x5cefc8b737c03353!2sNational%20Rent-to-own!5e0!3m2!1sen!2sca!4v1753998103070!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-md-6">
+        <h5>Kingston Store</h5>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2857.638536139736!2d-76.502993410358!3d44.25568143869845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd2abc1cbca1b93%3A0x5cb3267451cb60bb!2s400%20Elliott%20Ave%2C%20Kingston%2C%20ON%20K7K%206M9!5e0!3m2!1sen!2sca!4v1753998565251!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center p-4 bg-dark text-white">
+    &copy; 2025 National Rental – For Educational Use Only
+  </footer>
+</body>
+</html>
