@@ -65,6 +65,27 @@
     </div>
   </main>
 
+     <!-- Product Detail Modal -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productModalLabel">Product Name</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p id="modal-description"></p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Model Number:</strong> <span id="modal-sku"></span></li>
+            <li class="list-group-item"><strong>Brand:</strong>        <span id="modal-brand"></span></li>
+            <li class="list-group-item"><strong>Category:</strong>     <span id="modal-category"></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- Footer -->
   <footer class="text-center p-4 bg-dark text-white">
     &copy; 2025 National Rental – For Educational Use Only

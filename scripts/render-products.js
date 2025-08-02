@@ -4,7 +4,7 @@ fetch('data/furniture.json')
   .then(res => res.json())
   .then(products => {
     const grid     = document.getElementById('product-grid');
-    const category = grid.dataset.category;             // e.g. "Electronics"
+    const category = grid.dataset.category;             // e.g. "Dining Room"
     const items    = products.filter(p => p.category === category);
 
     items.forEach((product, i) => {
@@ -33,9 +33,9 @@ fetch('data/furniture.json')
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">${product.name}</h5>
-            <p class="card-text">${product.description}</p>
+          <div class="card-body d-flex flex-column" style="cursor: pointer;">
+            <h5 class="card-title mb-2">${product.name}</h5>
+            <p class="card-text flex-grow-1">${product.description}</p>
           </div>
         </div>
       `;
@@ -52,6 +52,19 @@ fetch('data/furniture.json')
           nextEl: `.${swiperClass} .swiper-button-next`,
           prevEl: `.${swiperClass} .swiper-button-prev`
         }
+      });
+
+      // 6) Modal click handler on text portion only
+      const textEl = col.querySelector('.product-card .card-body');
+      textEl.addEventListener('click', event => {
+        event.stopPropagation();  // Prevent interfering with Swiper clicks
+        document.getElementById('productModalLabel').textContent = product.name;
+        document.getElementById('modal-description').textContent = product.description;
+        document.getElementById('modal-sku').textContent = product.sku;
+        document.getElementById('modal-brand').textContent = product.brand;
+        document.getElementById('modal-category').textContent = product.category;
+        const modal = new bootstrap.Modal(document.getElementById('productModal'));
+        modal.show();
       });
     });
   })
