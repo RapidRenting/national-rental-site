@@ -126,3 +126,7 @@ footer {
   object-fit: cover;
   border-radius: 5px;
 }
+
+.custom-header {
+  background-color: #0a0201 !important;
+}
